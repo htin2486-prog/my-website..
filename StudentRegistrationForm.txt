@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="" method="POST">
+      
+        <p>
+            <label for="name">Full Name:</label><br>
+            <input 
+                type="text" 
+                id="name" 
+                name="fullName" 
+                placeholder="Enter your full name" 
+                minlength="3" 
+                maxlength="50" 
+                required
+            >
+        </p>
+
+      
+     <p>
+          <label for="email">Email:</label><br>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="example@gmail.com"
+                required
+            >
+     </p>
+
+        
+        <p>
+            <label for="age">Age:</label><br>
+            <input 
+                type="number" 
+                id="age" 
+                name="age" 
+                min="18" 
+                max="100"
+                required
+            >
+     </p>
+
+      
+     <div>
+            <p><strong>Gender:</strong></p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+     </div>
+
+        
+     <div>
+            <p><strong>Hobbies:</strong></p>
+          <input type="checkbox" id="sports" name="hobby" value="sports">
+            <label for="sports">Sports</label><br>
+
+            <input type="checkbox" id="music" name="hobby" value="music">
+            <label for="music">Music</label><br>
+
+            <input type="checkbox" id="reading" name="hobby" value="reading">
+            <label for="reading">Reading</label><br>
+
+            <input type="checkbox" id="pubg" name="hobby" value="pubg">
+            <label for="pubg">PUBG</label>
+        </div>
+
+      
+      <p>
+            <label for="major">Major:</label><br>
+            <select id="major" name="major" required>
+                <option value="">-- Select a major --</option>
+                <option value="it">Information Technology</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="business">Business Administration</option>
+            </select>
+      </p>
+
+        
+     <p>
+            <label for="message">Message:</label><br>
+            <textarea 
+                id="message" 
+                name="message" 
+                rows="5" 
+                cols="40" 
+                maxlength="200" 
+                placeholder="Enter your message"
+            ></textarea>
+        </p>
+
+        
+        <p>
+            <label for="photo">Profile Picture:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </p>
+
+       
+ <p>
+            <label for="studentId">Student ID:</label><br>
+            <input type="text" id="studentId" name="studentId" value="SV1122" readonly>
+</p>
+
+
+ <p>
+        <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" value="Vietnam" disabled>
+ </p>
+
+       
+ <p>
+            <label for="studentCode">Student Code:</label><br>
+            <input 
+                type="text" 
+                id="studentCode" 
+              name="studentCode" 
+                pattern="[A-Za-z0-9]+" 
+                title="Chỉ cho phép nhập chữ cái và số, không chứa ký tự đặc biệt"
+                required
+            >
+ </p>
+
+    
+ <p>
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
+</p>
+    </form>
+
+</body>
+</html>
+
+    
+    
+
